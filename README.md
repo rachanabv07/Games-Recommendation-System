@@ -5,7 +5,6 @@ In this project, using IGN Games dataset, a Recommendation System has been built
 ## Dataset
 - In 20 years, the gaming industry has grown sophisticated. By exploring this dataset, one will be able to find trends about industries, compare consoles against each other, search through the most popular genres and more.
 - It contains 18625 data points with various features such as release dates with different platform along with IGN scores.
-[Source](https://www.kaggle.com/datasets/joebeachcapital/ign-games)
 
 ## Column Description
 There are 11 columns in this dataset.
@@ -37,5 +36,6 @@ import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 ```
-    
+## Source    
+https://www.kaggle.com/datasets/joebeachcapital/ign-games
 
