@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Game Recommendation System</h1>
+        <form action="/" method="POST">
+            <label for="game_name">Enter a Game Name:</label>
+            <input type="text" id="game_name" name="game_name" required>
+            <input type="submit" value="Get Recommendations">
+        </form>
+        <div class="recommendations">
+            {% if recommendations is not none %}
+                <table>
+                    <tr>
+                        <th>SL NO</th>
+                        <th>Game Names</th>
+                        <th>Review</th>
+                        <th>URL</th>
+                        <th>Platform</th>
+                        <th>Score</th>
+                        <th>Genre</th>
+                        <th>Release Date</th>
+                    </tr>
+                    {% for index, game in recommendations.iterrows() %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td>{{ game['Game Names'] }}</td>
+                            <td>{{ game['Review'] }}</td>
+                            <td><a href="{{ game['URL'] }}">Link</a></td>
+                            <td>{{ game['Platform'] }}</td>
+                            <td>{{ game['Score'] }}</td>
+                            <td>{{ game['Genre'] }}</td>
+                            <td>{{ game['Release Date'] }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            {% else %}
+                <p>Top 10 recommendations </p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset some default styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #252525;
+    color: white;
+    /* Set text color to white */
+}
+
+/* Container styles */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(26, 25, 25, 0.8);
+    /* Adjust the background color opacity as needed */
+    border-radius: 10px;
+    background-image: url('https://images5.alphacoders.com/300/300715.jpg');
+    /* Replace with your image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+/* Form styles */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    /* Set label text color to white */
+    font-size: 30px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: serif;
+    font-weight: bold;
+    border: 1px solid #1414148c;
+    border-radius: 5px;
+    color: white;
+    /* Set input text color to white */
+    background-color: rgba(20, 20, 20, 0.849);
+    /* Make input slightly transparent */
+}
+
+input[type="submit"] {
+    background-color: #171718e5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+/* Recommendations table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5px;
+    background-color: rgba(14, 13, 13, 0.795);
+    /* Adjust the background color opacity as needed */
+}
+
+table,
+th,
+td {
+    border: 1px solid #1b1b1bb9;
+    color: white;
+    font-family: serif;
+    /* Set table text color to white */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+
+}
+
+th {
+    background-color: #161616b0;
+    font-weight: bold;
+    font-family: serif;
+}
+
+tr:hover {
+    background-color: #1f1e1ead;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #b5bcc4;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
