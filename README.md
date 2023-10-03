@@ -37,6 +37,9 @@ import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 ```
+## Deployment
+![Deployment Image 1](https://github.com/rachanabv07/Games-Recommendation-System/blob/main/image/image.png)
 
 ## Source    
 https://www.kaggle.com/datasets/joebeachcapital/ign-games
+
