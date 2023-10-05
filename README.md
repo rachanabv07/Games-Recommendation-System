@@ -38,6 +38,8 @@ import random
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
+
+from flask import Flask, render_template, request
 ```
 ## Deployment
 ![Deployment Image 1](https://github.com/rachanabv07/Games-Recommendation-System/blob/main/image/image.png)
